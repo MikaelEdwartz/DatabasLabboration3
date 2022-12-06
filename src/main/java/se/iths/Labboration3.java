@@ -13,6 +13,17 @@ public class Labboration3 {
 
     }
 
+    private static Connection connect() {
+
+        var pathToSQLite = "jdbc:sqlite:/Users/mikaeledwartz/Desktop/Databas/SQLite/datbas";
+        Connection connector = null;
+        try {
+            connector = DriverManager.getConnection(pathToSQLite);
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+        return connector;
+    }
     private static void printMenu() {
         System.out.println("1: Lägg till i databasen ");
         System.out.println("2: ");
