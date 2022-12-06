@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7b87bd1-44f5-4870-b8c7-4d354af3fa26" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/iths/Labboration3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/iths/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/Labboration3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/Labboration3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,10 +98,40 @@
       <updated>1670317840757</updated>
       <workItem from="1670317841858" duration="3663000" />
       <workItem from="1670322228697" duration="2709000" />
+      <workItem from="1670339723411" duration="304000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1670339886433</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670339886433</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add printMenu method">
+      <created>1670339981670</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670339981670</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add connect method">
+      <created>1670340014428</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670340014428</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <MESSAGE value="add printMenu" />
+    <MESSAGE value="add printMenu method" />
+    <MESSAGE value="add connect method" />
+    <option name="LAST_COMMIT_MESSAGE" value="add connect method" />
   </component>
 </project>

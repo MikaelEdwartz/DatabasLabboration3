@@ -10,6 +10,19 @@ public class Labboration3 {
     public static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
+        while (true) {
+            printMenu();
+            var option = Integer.parseInt(scanner.nextLine());
+
+            switch (option) {
+                case 1 -> addToDatabase();
+                case 2 -> readWholeDatabase();
+                case 3 -> updateDatabase();
+                case 4 -> deleteFromDatabase();
+
+            }
+
+        }
 
     }
     private static void addToDatabase() {
