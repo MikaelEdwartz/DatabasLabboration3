@@ -12,6 +12,37 @@ public class Labboration3 {
     public static void main(String[] args) {
 
     }
+    private static void addToDatabase() {
+        var connector = connect();
+        var titel = scanner.nextLine();
+        var forfattare = scanner.nextLine();
+        var pris = Integer.parseInt(scanner.nextLine());
+
+        String sql = "INSERT INTO bok(bokTitel, bokForfattare, bokPris) VALUES(?,?,?)";
+
+        try (PreparedStatement preparedStatement = connector.prepareStatement(sql)) {
+            preparedStatement.setString(1, titel);
+            preparedStatement.setString(2, forfattare);
+            preparedStatement.setInt(3, pris);
+            preparedStatement.executeUpdate();
+            System.out.println("Tillagd!");
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+
+    }
+
+    private static void updateDatabase() {
+
+    }
+
+    private static void readWholeDatabase() {
+
+    }
+
+    private static void deleteFromDatabase() {
+    }
+
 
     private static Connection connect() {
 
