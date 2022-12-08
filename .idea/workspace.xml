@@ -5,6 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7b87bd1-44f5-4870-b8c7-4d354af3fa26" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/iths/Connector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/iths/Deleter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/iths/Inserter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/iths/Reader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/iths/Updater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/Labboration3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/Labboration3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +104,12 @@
       <updated>1670317840757</updated>
       <workItem from="1670317841858" duration="3663000" />
       <workItem from="1670322228697" duration="2709000" />
-      <workItem from="1670339723411" duration="304000" />
+      <workItem from="1670339723411" duration="946000" />
+      <workItem from="1670401795657" duration="1096000" />
+      <workItem from="1670414713222" duration="2229000" />
+      <workItem from="1670423015928" duration="1949000" />
+      <workItem from="1670424980135" duration="1716000" />
+      <workItem from="1670496163843" duration="4985000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1670339886433</created>
@@ -121,7 +132,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670340014428</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add CRUD methods">
+      <created>1670340037330</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670340037330</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add menu options">
+      <created>1670340066764</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670340066764</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +157,8 @@
     <MESSAGE value="add printMenu" />
     <MESSAGE value="add printMenu method" />
     <MESSAGE value="add connect method" />
-    <option name="LAST_COMMIT_MESSAGE" value="add connect method" />
+    <MESSAGE value="add CRUD methods" />
+    <MESSAGE value="add menu options" />
+    <option name="LAST_COMMIT_MESSAGE" value="add menu options" />
   </component>
 </project>
