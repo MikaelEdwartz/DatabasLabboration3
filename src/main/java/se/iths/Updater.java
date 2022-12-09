@@ -36,7 +36,7 @@ public class Updater {
                getStringInput("Vad vill du uppdatera kategorin till?"));
     }
     private static void update(int iD,String name, String manufacturor, int category, int releaseYear){
-        var sql = "UPDATE spel SET spelNamn = ?, spelTillverkare = ?, spelSläpptesÅr = ?, spelKategori = ? WHERE speld = ?";
+        var sql = "UPDATE spel SET spelNamn = ?, spelTillverkare = ?, spelSläpptesÅr = ?, spelKategori = ? WHERE spelID = ?";
 
         try(PreparedStatement preparedStatement = Connector.connect().prepareStatement(sql)){
             preparedStatement.setString(1, name);
