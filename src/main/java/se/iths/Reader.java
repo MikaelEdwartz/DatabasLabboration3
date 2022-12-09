@@ -34,6 +34,8 @@ public class Reader {
                                "Utvecklare" + printTab(getNrOfTabs("Utvecklare")) +
                                "Släpptes" + printTab(getNrOfTabs("Släpptes")) + "Kategori");
 
+
+
             var resultSet = statement.executeQuery(sql);
             while (resultSet.next())
                 printColumns(resultSet);
@@ -61,6 +63,7 @@ public class Reader {
         try (Statement statement = connect().createStatement()) {
             var resultSet = statement.executeQuery(sql);
             System.out.println("Spel" + printTab(getNrOfTabs("Spel")) + "Utvecklare" + printTab(getNrOfTabs("Utvecklare")) + "Släpptes");
+
             while (resultSet.next())
                 printGameColumns(resultSet);
         } catch (SQLException e) {
@@ -98,7 +101,6 @@ public class Reader {
     private static int getIntInput(String prompt) {
         System.out.println(prompt);
         return Integer.parseInt(scanner.nextLine());
-
     }
 
     private static String printTab(int nrOfTabs) {
@@ -107,13 +109,35 @@ public class Reader {
 
     private static int getNrOfTabs(String string) {
         int length = string.length();
-
-        if (length >= 8)
+        if(length >= 16)
             return 1;
-        if (length >= 4)
+        if(length >= 12)
             return 2;
+        if (length >= 8)
+            return 3;
+        if (length >= 4)
+            return 4;
 
         return 0;
     }
 
+    public static void searchFromDatabase() {
+        var choice = getIntInput(
+                "=========================\n" +
+                        "|1. Sök bland spel      |\n" +
+                        "|2. Sök bland kategorier|\n" +
+                        "=========================");
+        
+        switch(choice){
+            case 1 -> searchInGames();
+            case 2 -> searchInCategories();
+        }
+    }
+
+    private static void searchInGames() {
+    }
+
+    private static void searchInCategories() {
+        
+    }
 }
