@@ -7,6 +7,7 @@
     <list default="true" id="d7b87bd1-44f5-4870-b8c7-4d354af3fa26" name="Changes" comment="refactor CRUD into classes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/Deleter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/Deleter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/Inserter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/Inserter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/Labboration3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/Labboration3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/Reader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/Updater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/Updater.java" afterDir="false" />
@@ -108,7 +109,7 @@
       <workItem from="1670423015928" duration="1949000" />
       <workItem from="1670424980135" duration="1716000" />
       <workItem from="1670496163843" duration="5158000" />
-      <workItem from="1670510689841" duration="3678000" />
+      <workItem from="1670510689841" duration="8050000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1670339886433</created>
@@ -152,7 +153,28 @@
       <option name="project" value="LOCAL" />
       <updated>1670506231244</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add Deleter class with functionality to delete from database">
+      <created>1670574738140</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1670574738140</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add Updater with update functionality in database">
+      <created>1670574756270</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670574756270</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add search functionality to Reader.java">
+      <created>1670574778461</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1670574778461</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +188,9 @@
     <MESSAGE value="add CRUD methods" />
     <MESSAGE value="add menu options" />
     <MESSAGE value="refactor CRUD into classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor CRUD into classes" />
+    <MESSAGE value="add Deleter class with functionality to delete from database" />
+    <MESSAGE value="add Updater with update functionality in database" />
+    <MESSAGE value="add search functionality to Reader.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="add search functionality to Reader.java" />
   </component>
 </project>

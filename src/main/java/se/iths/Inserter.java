@@ -5,14 +5,15 @@ import java.sql.SQLException;
 import java.util.Scanner;
 
 import static se.iths.Connector.connect;
+
 public class Inserter {
-        private final static Scanner scanner = new Scanner(System.in);
+    private final static Scanner scanner = new Scanner(System.in);
+
     public static void addToDatabase() {
         System.out.println("I vilken databas vill du lägga till i?" +
                 "\n 1. Spel \n" +
                 " 2. Kategorier");
         var input = Integer.parseInt(scanner.nextLine());
-
         switch (input) {
             case 1 -> addToGames();
             case 2 -> updateCategories();
@@ -29,6 +30,7 @@ public class Inserter {
                 getIntInput("Vilket år släpptes spelet?"),
                 getIntInput("Vad för kategori tillhör spelet?"));
     }
+
     private static void insert(String name, String manufacturor, int releaseYear, int categoryNumber) {
         String sql = "INSERT INTO spel(spelNamn, spelTillverkare, spelSläpptesÅr, spelkategori) VALUES(?,?,?,?)";
 
@@ -48,8 +50,6 @@ public class Inserter {
 
     private static void insert(String kategori) {
         String sql = "INSERT INTO kategori (kategori) VALUES(?)";
-
-
         try (PreparedStatement preparedStatement = connect().prepareStatement(sql)) {
             preparedStatement.setString(1, kategori);
             preparedStatement.executeUpdate();
@@ -59,6 +59,7 @@ public class Inserter {
         }
 
     }
+
     private static int getIntInput(String prompt) {
         System.out.println(prompt);
         return Integer.parseInt(scanner.nextLine());

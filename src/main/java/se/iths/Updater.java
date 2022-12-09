@@ -15,30 +15,31 @@ public class Updater {
                         "|2. Uppdatera kategorier|\n" +
                         "=========================");
 
-        switch (choice){
+        switch (choice) {
             case 1 -> updateGameCategory();
             case 2 -> updateCategoriesCategory();
         }
 
     }
 
-
     private static void updateGameCategory() {
         update(getIntInput("Vilken kolumn vill du uppdatera?"),
-               getStringInput("Vad vill du uppdatera namnet till?"),
-               getStringInput("Vad vill du uppdatera tillverkaren till?"),
-               getIntInput("Vilken kategori vill du uppdatera till?"),
-               getIntInput("Vilket år vill du uppdatera till?"));
+                getStringInput("Vad vill du uppdatera namnet till?"),
+                getStringInput("Vad vill du uppdatera tillverkaren till?"),
+                getIntInput("Vilken kategori vill du uppdatera till?"),
+                getIntInput("Vilket år vill du uppdatera till?"));
 
     }
+
     private static void updateCategoriesCategory() {
         update(getIntInput("Vilken kategori vill du uppdatera?"),
-               getStringInput("Vad vill du uppdatera kategorin till?"));
+                getStringInput("Vad vill du uppdatera kategorin till?"));
     }
-    private static void update(int iD,String name, String manufacturor, int category, int releaseYear){
+
+    private static void update(int iD, String name, String manufacturor, int category, int releaseYear) {
         var sql = "UPDATE spel SET spelNamn = ?, spelTillverkare = ?, spelSläpptesÅr = ?, spelKategori = ? WHERE spelID = ?";
 
-        try(PreparedStatement preparedStatement = Connector.connect().prepareStatement(sql)){
+        try (PreparedStatement preparedStatement = Connector.connect().prepareStatement(sql)) {
             preparedStatement.setString(1, name);
             preparedStatement.setString(2, manufacturor);
             preparedStatement.setInt(3, releaseYear);
@@ -50,10 +51,11 @@ public class Updater {
             throw new RuntimeException(e);
         }
     }
-    private static void update(int iD, String category){
+
+    private static void update(int iD, String category) {
         var sql = "UPDATE kategori SET kategori = ? WHERE kategoriID = ?";
 
-        try(PreparedStatement preparedStatement = Connector.connect().prepareStatement(sql)){
+        try (PreparedStatement preparedStatement = Connector.connect().prepareStatement(sql)) {
             preparedStatement.setString(1, category);
             preparedStatement.setInt(2, iD);
             preparedStatement.executeUpdate();
@@ -63,9 +65,6 @@ public class Updater {
             throw new RuntimeException(e);
         }
     }
-
-
-
 
     private static int getIntInput(String prompt) {
         System.out.println(prompt);

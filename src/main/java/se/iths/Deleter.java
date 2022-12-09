@@ -7,7 +7,6 @@ import java.util.Scanner;
 public class Deleter {
     private final static Scanner scanner = new Scanner(System.in);
 
-
     public static void deleteFromDatabase() {
         var choice = getIntInput(
                 "===========================\n" +
@@ -15,7 +14,7 @@ public class Deleter {
                         "|2. Radera från kategorier|\n" +
                         "===========================");
 
-        switch(choice){
+        switch (choice) {
             case 1 -> deleteFromGames(getIntInput("Vad är id't på spelet du vill radera?"));
             case 2 -> deleteFromCategories(getIntInput("Vad är id't på kategorin du vill radera?"));
         }
@@ -24,7 +23,7 @@ public class Deleter {
     private static void deleteFromGames(int spelID) {
         var sql = "DELETE FROM spel WHERE spelID = ?";
 
-        try(PreparedStatement preparedStatement = Connector.connect().prepareStatement(sql)){
+        try (PreparedStatement preparedStatement = Connector.connect().prepareStatement(sql)) {
 
             preparedStatement.setInt(1, spelID);
             preparedStatement.executeUpdate();
@@ -37,7 +36,7 @@ public class Deleter {
     private static void deleteFromCategories(int kategoriID) {
         var sql = "DELETE FROM kategori WHERE kategoriID = ?";
 
-        try(PreparedStatement preparedStatement = Connector.connect().prepareStatement(sql)){
+        try (PreparedStatement preparedStatement = Connector.connect().prepareStatement(sql)) {
 
             preparedStatement.setInt(1, kategoriID);
             preparedStatement.executeUpdate();
@@ -52,8 +51,4 @@ public class Deleter {
 
     }
 
-    private static String getStringInput(String prompt) {
-        System.out.println(prompt);
-        return scanner.nextLine();
-    }
 }
