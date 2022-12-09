@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7b87bd1-44f5-4870-b8c7-4d354af3fa26" name="Changes" comment="refactor CRUD into classes">
+    <list default="true" id="d7b87bd1-44f5-4870-b8c7-4d354af3fa26" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/Deleter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/Deleter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/Inserter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/Inserter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/Labboration3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/Labboration3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/Reader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/iths/Updater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/iths/Updater.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,22 +39,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.24971229",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.24971229&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Labboration3">
     <configuration name="Labboration3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="se.iths.Labboration3" />
@@ -109,7 +105,8 @@
       <workItem from="1670423015928" duration="1949000" />
       <workItem from="1670424980135" duration="1716000" />
       <workItem from="1670496163843" duration="5158000" />
-      <workItem from="1670510689841" duration="8050000" />
+      <workItem from="1670510689841" duration="8133000" />
+      <workItem from="1670583147700" duration="2072000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1670339886433</created>
@@ -174,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670574778461</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="clean up code">
+      <created>1670582899614</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670582899614</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +195,7 @@
     <MESSAGE value="add Deleter class with functionality to delete from database" />
     <MESSAGE value="add Updater with update functionality in database" />
     <MESSAGE value="add search functionality to Reader.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="add search functionality to Reader.java" />
+    <MESSAGE value="clean up code" />
+    <option name="LAST_COMMIT_MESSAGE" value="clean up code" />
   </component>
 </project>

@@ -36,10 +36,20 @@ public class Reader {
 
             var resultSet = statement.executeQuery(sql);
             while (resultSet.next())
-                printGameColumns(resultSet);
+                printInnerJoinColumn(resultSet);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    private static void printInnerJoinColumn(ResultSet resultSet) throws SQLException {
+        System.out.println(resultSet.getString("spelNamn") +
+                printTab(getNrOfTabs(resultSet.getString("spelNamn"))) +
+                resultSet.getString("spelTillverkare") +
+                printTab(getNrOfTabs(resultSet.getString("spelTillverkare"))) +
+                resultSet.getInt("spelSläpptesÅr") +
+                printTab(getNrOfTabs(String.valueOf(resultSet.getInt("spelSläpptesÅr"))))+
+                resultSet.getString("kategori"));
     }
 
     private static void readfromGames() {
@@ -56,7 +66,6 @@ public class Reader {
             throw new RuntimeException(e);
         }
     }
-
     private static void printGameColumns(ResultSet resultSet) throws SQLException {
         System.out.println(resultSet.getString("spelNamn") +
                 printTab(getNrOfTabs(resultSet.getString("spelNamn"))) +
@@ -65,6 +74,7 @@ public class Reader {
                 resultSet.getInt("spelSläpptesÅr") +
                 printTab(getNrOfTabs(String.valueOf(resultSet.getInt("spelSläpptesÅr")))));
     }
+
 
     private static void readFromCategories() {
         String sql = "SELECT * FROM kategori";
